@@ -14,6 +14,12 @@ def char_count_for(target, c):
             count += 1
     return count
 
+def char_count_foreach(target, c):
+    count = 0
+    for char in target:
+        if char == c:
+            count += 1
+    return count
 
 
 string = "Batman vs Superman"
@@ -21,7 +27,9 @@ char = "m"
 
 char_count_while = char_count_while(string, char)
 char_count_for = char_count_for(string, char)
+char_count_foreach = char_count_foreach(string, char)
 
-print(f"While loop count: {char_count_while}")
-print(f"For loop count: {char_count_for}")
+print(f"\nWhile loop count: {char_count_while}")
+print(f"\nFor loop count: {char_count_for}")
+print(f"\nFor each loop: {char_count_foreach}")
 
